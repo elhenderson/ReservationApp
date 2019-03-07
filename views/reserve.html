@@ -24,7 +24,7 @@
       <h2 class="text-center">Make your reservation</h2>
       <br>
       <div class="text-center">
-        <a href="./tables.html">
+        <a href="/tables">
           <button class="btn btn-lg btn-primary">
             <span class="fa fa-list-alt"></span> View Tables</button>
         </a>
@@ -92,7 +92,7 @@
     console.log(newReservation);
 
 
-    $.post(placeholder, newReservation,
+    $.post("/api/tables", newReservation,
       function(data) {
 
         if (data) {
